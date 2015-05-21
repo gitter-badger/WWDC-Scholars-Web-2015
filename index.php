@@ -37,20 +37,26 @@
 				if($page > 0){
 			?>
 			<a href="index.php?page=<?php echo $page - 1; ?>">
-				<div class="pageLink">
+				<div class="pageLink left">
 					<- Previous Page
 				</div>
 			</a>
 			<?php
 				}
+				else{
+					echo '<style>.pageLink{ width:990px; }</style>';
+				}
 				if(count($scholars) == 20){
 			?>
 			<a href="index.php?page=<?php echo $page + 1; ?>">
-				<div class="pageLink">
+				<div class="pageLink right">
 					Next Page ->
 				</div>
 			</a>
 			<?php
+				}
+				else{
+					echo '<style>.pageLink{ width:990px; }</style>';
 				}
 				for($i = 0; $i < count($scholars); $i++){
 					$oliver= $scholars[$i];
