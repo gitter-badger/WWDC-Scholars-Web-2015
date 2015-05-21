@@ -23,12 +23,56 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<div id="head">
-			<h1>&#63743; WWDC</h1><h2>Scholars</h2>
-		</div>
+		<a href="index.php" style="text-decoration:none;">
+			<div id="head">
+				<h1>&#63743; WWDC</h1><h2>Scholars</h2>
+			</div>
+		</a>
 		<div class="container">
 			<h1><?php echo $scholar->get('firstName') . " " . $scholar->get('lastName');?></h1>
-			<p>GitHub Test</p>
+			<div class="third">
+				<h2>WWDC Details</h2>
+				<p>
+				<?php
+					if($scholar->get('numberOfTimesWWDCScholar') == '1'){
+						echo 'First time at WWDC!<br><br>';
+					}
+					else if($scholar->get('numberOfTimesWWDCScholar') != null){
+						echo 'Has  attended WWDC ' . $scholar->get('numberOfTimesWWDCScholar') . ' times<br><br>';
+					}
+					if($scholar->get('githubLinkApp') != null){
+						echo '<a href="' . $scholar->get('githubLinkApp') . '" target="_blank">WWDC App on Github</a><br><br>';
+					}
+					if($scholar->get('videoLink') != null){
+						echo '<a href="' . $scholar->get('videoLink') . '" target="_blank">WWDC App Video</a><br><br>';
+					}
+				?>
+				</p>
+			</div>
+			<div class="third" style="background-image:url('<?php echo $scholar->get('profilePic')->getURL(); ?>');border-radius:32px;">
+			</div>
+			<div class="third">
+				<h2>Contact Details</h2>
+				<p>
+				<?php
+					if($scholar->get('email') != null){
+						echo '<a href="' . $scholar->get('email') . '"target="_blank">Email</a><br><br>';
+					}
+					if($scholar->get('website') != null){
+						echo '<a href="' . $scholar->get('website') .  '"target="_blank">Website</a><br><br>';
+					}
+					if($scholar->get('twitter') != null){
+						echo '<a href="' . $scholar->get('twitter') . '"target="_blank">Twitter</a><br><br>';
+					}
+					if($scholar->get('linkedin') != null){
+						echo '<a href="' . $scholar->get('linkedin') . '" target="_blank">LinkedIn</a><br><br>';
+					}
+					if($scholar->get('facebook') != null){
+						echo '<a href="' . $scholar->get('facebook') . '" target="_blank">Facebook</a><br><br>';
+					}
+				?>
+				</p>
+			</div>
 		</div>
 	</body>
 </html>
