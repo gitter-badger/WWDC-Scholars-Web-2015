@@ -54,6 +54,9 @@ a:visited{
 h1{
 	font-weight:200;
 }
+h2{
+	font-weight:200;
+}
 p{
 	font-weight:200;
 }
@@ -71,6 +74,13 @@ b{
 	background-color:rgba(0,0,0,0.5);
 	border-bottom-left-radius:32px;
 	border-bottom-right-radius:32px;
+}
+.container .third{
+	width:330px;
+	min-height:330px;
+	background-size:cover;
+	height:auto;
+	float:left;
 }
 #head h1{
 	font-size:150%;
