@@ -28,6 +28,7 @@
 		</div>
 		<div class="container">
 			<h1><?php echo $scholar->get('firstName') . " " . $scholar->get('lastName');?></h1>
+			<p>GitHub Test</p>
 		</div>
 	</body>
 </html>
