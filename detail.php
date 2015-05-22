@@ -56,7 +56,7 @@
 				<p>
 				<?php
 					if($scholar->get('email') != null){
-						echo '<a href="' . $scholar->get('email') . '"target="_blank">Email</a><br><br>';
+						echo '<a href="mailto:' . $scholar->get('email') . '"target="_blank">Email</a><br><br>';
 					}
 					if($scholar->get('website') != null){
 						echo '<a href="' . $scholar->get('website') .  '"target="_blank">Website</a><br><br>';
