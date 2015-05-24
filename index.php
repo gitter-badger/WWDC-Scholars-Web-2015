@@ -12,7 +12,6 @@
 		<title>WWDC Scholars</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="viewport" content="width=device-width,user-scalable=no">
 	</head>
 	<body>
 		<div id="head">
@@ -25,7 +24,7 @@
 				if(!isset($page)){
 					$page = 0;
 				}
-				$limit = 20;
+				$limit = 24;
 
 				//LOAD DATA FROM PARSE
 				$query = new ParseQuery("scholars");
@@ -46,9 +45,6 @@
 					echo '<div class="square" style="background-image:url(\'';
 					echo $imgUrl->getURL();
 					echo '\');';
-					if($i % 4 == 3){
-						echo 'margin-right:0px;';
-					}
 					echo '">';
 					echo '<h1>' . $oliver->get("firstName") . ' ' . $oliver->get('lastName') . '</h1>';
 					echo '</div></a>';
@@ -66,9 +62,9 @@
 			<?php
 				}
 				else{
-					echo '<style>.pageLink{ width:990px; }</style>';
+					echo '<style>.pageLink{ width:100%; }</style>';
 				}
-				if(count($scholars) == 20){
+				if(count($scholars) == $limit){
 			?>
 			<a href="index.php?page=<?php echo $page + 1; ?>">
 				<div class="pageLink right">
@@ -78,7 +74,7 @@
 			<?php
 				}
 				else{
-					echo '<style>.pageLink{ width:990px; }</style>';
+					echo '<style>.pageLink{ width:100%; }</style>';
 				}
 			?>
 		</div>
