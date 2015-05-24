@@ -31,7 +31,7 @@
 		<div class="container">
 			<h1><?php echo $scholar->get('firstName') . " " . $scholar->get('lastName');?></h1>
 			<div class="third">
-				<h2>WWDC Details</h2>
+				<h2>&#63743;Apple Details</h2>
 				<p>
 				<?php
 					if($scholar->get('numberOfTimesWWDCScholar') == '1'){
@@ -74,5 +74,29 @@
 				</p>
 			</div>
 		</div>
+		<?php
+			 if($scholar->get('screenshotOne') != null){
+		?>
+		<div class="container">
+			<h1>
+				&#63743;WWDC 15 App Screenshots
+			</h1>
+			<div id="screenshotsWrap">
+				<div id="screenshots">
+					<img src="<?php echo $scholar->get('screenshotOne')->getURL(); ?>">
+					<?php
+						$screenshots = array("screenshotTwo", "screenshotThree", "screenshotFour");
+						foreach($screenshots as $shot){
+							if($scholar->get($shot) != null){
+								echo '<img src="' . $scholar->get($shot)->getURL() . '">';
+							}
+						}
+					?>
+				</div>
+			</div>
+		</div>
+		<?php
+			}
+		?>
 	</body>
 </html>
