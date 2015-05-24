@@ -11,7 +11,6 @@
 	<head>
 		<title>WWDC Scholars</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<meta name="apple-mobile-web-app-capable" content="yes">
 	</head>
 	<body>
 		<div id="head">

@@ -124,7 +124,7 @@ b{
 	height:587px;
 }
 
-@media all and (min-width: 1530px) {
+@media all and (min-width: 1530px){
 	#head{
 		width:1530px;
 	}
@@ -134,8 +134,11 @@ b{
 	.pageLink{
 		width:735px;
 	}
+	#footer{
+		width:1530px;
+	}
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1024px){
 	#head{
 		width:765px;
 	}
@@ -144,6 +147,10 @@ b{
 	}
 	.pageLink{
 		width:350px;
+		overflow:hidden;
+	}
+	#footer{
+		width:765px;
 	}
 }
 @media all and (max-width: 765px){
@@ -155,5 +162,22 @@ b{
 	}
 	.pageLink{
 		width:225px;
+	}
+	#footer{
+		width:510px;
+	}
+}
+@media all and (max-width: 510px){
+	#head{
+		width:255px;
+	}
+	.container{
+		width:255px;
+	}
+	.pageLink{
+		width:95px
+	}
+	#footer{
+		width:255px;
 	}
 }
