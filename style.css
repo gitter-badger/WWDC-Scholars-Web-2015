@@ -112,12 +112,14 @@ b{
 }
 #screenshotsWrap{
 	overflow-x:auto;
+	-webkit-overflow-scrolling: touch;
 }
 #screenshots{
 	display:inline-block;
 	white-space:nowrap;
+	height:600px;
 }
 #screenshots img{
 	margin-right:30px;
-	width:330px;
+	height:587px;
 }

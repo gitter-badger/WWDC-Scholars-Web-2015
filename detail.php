@@ -21,6 +21,8 @@
 		?>
 		<title>WWDC Scholar - <?php echo $scholar->get('firstName') . " " . $scholar->get('lastName'); ?></title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width,user-scalable=no">
 	</head>
 	<body>
 		<a href="index.php" style="text-decoration:none;">
