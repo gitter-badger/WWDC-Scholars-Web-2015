@@ -18,11 +18,14 @@
 		</div>
 		<div class="container">
 			<?php
+				//DETERMINE CORRECT PEOPLE TO LOAD, GIVEN PAGE
 				parse_str($_SERVER['QUERY_STRING']);
 				if(!isset($page)){
 					$page = 0;
 				}
 				$limit = 20;
+
+				//LOAD DATA FROM PARSE
 				$query = new ParseQuery("scholars");
 				$query->ascending("lastName");
 				$query->limit($limit);
@@ -32,8 +35,25 @@
 				}catch(ParseException $ex){
 				}
 				$scholars = $results->find();
+
+				//DISPLAY DATA ON SCREEN
+				for($i = 0; $i < count($scholars); $i++){
+					$oliver= $scholars[$i];
+					$imgUrl = $oliver->get("profilePic");
+					echo '<a href="detail.php?page=' . $oliver->getObjectId() . '">';
+					echo '<div class="square" style="background-image:url(\'';
+					echo $imgUrl->getURL();
+					echo '\');';
+					if($i % 4 == 3){
+						echo 'margin-right:0px;';
+					}
+					echo '">';
+					echo '<h1>' . $oliver->get("firstName") . ' ' . $oliver->get('lastName') . '</h1>';
+					echo '</div></a>';
+				}
 			?>
 			<?php
+				//IF NOT PAGE 0, SHOW PREVIOUS PAGE BUTTON
 				if($page > 0){
 			?>
 			<a href="index.php?page=<?php echo $page - 1; ?>">
@@ -57,20 +77,6 @@
 				}
 				else{
 					echo '<style>.pageLink{ width:990px; }</style>';
-				}
-				for($i = 0; $i < count($scholars); $i++){
-					$oliver= $scholars[$i];
-					$imgUrl = $oliver->get("profilePic");
-					echo '<a href="detail.php?page=' . $oliver->getObjectId() . '">';
-					echo '<div class="square" style="background-image:url(\'';
-					echo $imgUrl->getURL();
-					echo '\');';
-					if($i % 4 == 3){
-						echo 'margin-right:0px;';
-					}
-					echo '">';
-					echo '<h1>' . $oliver->get("firstName") . ' ' . $oliver->get('lastName') . '</h1>';
-					echo '</div></a>';
 				}
 			?>
 		</div>
