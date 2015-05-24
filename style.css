@@ -27,13 +27,13 @@ a:visited{
 	margin:auto;
 	padding-top:5px;
 	padding-bottom:10px;
-	width:990px;
+	width:1020px;
 }
 .container{
 	text-align:center;
 	height:auto;
 	overflow:auto;
-	width: 990px;
+	width: 1020px;
 	margin:auto;
 	padding-top:15px;
 	padding-bottom:15px;
@@ -43,9 +43,7 @@ a:visited{
 	background-size:cover;
 	height:225px;
 	width: 225px;
-	margin-right:30px;
-	margin-top:15px;
-	margin-bottom:15px;
+	margin:15px;
 	float:left;
 	border-radius: 32px;
 
@@ -75,8 +73,9 @@ b{
 	border-bottom-right-radius:32px;
 }
 .container .third{
-	width:330px;
+	width:33.33333333333333%;
 	min-height:330px;
+	background-position:center;
 	background-size:cover;
 	height:auto;
 	float:left;
@@ -103,6 +102,7 @@ b{
 	float:right;
 }
 .pageLink{
+	margin:15px;
 	width:480px;
 	height: 50px;
 	background-color:black;
@@ -122,4 +122,38 @@ b{
 #screenshots img{
 	margin-right:30px;
 	height:587px;
+}
+
+@media all and (min-width: 1530px) {
+	#head{
+		width:1530px;
+	}
+	.container{
+		width:1530px;
+	}
+	.pageLink{
+		width:735px;
+	}
+}
+@media all and (max-width: 1024px) {
+	#head{
+		width:765px;
+	}
+	.container{
+		width:765px;
+	}
+	.pageLink{
+		width:350px;
+	}
+}
+@media all and (max-width: 765px){
+	#head{
+		width:510px;
+	}
+	.container{
+		width:510px;
+	}
+	.pageLink{
+		width:225px;
+	}
 }
