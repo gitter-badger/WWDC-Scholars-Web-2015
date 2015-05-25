@@ -41,6 +41,9 @@
 					else if($scholar->get('numberOfTimesWWDCScholar') != null){
 						echo 'Has  attended WWDC ' . $scholar->get('numberOfTimesWWDCScholar') . ' times<br><br>';
 					}
+					if($scholar->get('itunes') != null){
+						echo '<a href="' . $scholar->get('itunes') . '" target="_blank">iTunes Store Page</a><br><br>';
+					}
 					if($scholar->get('githubLinkApp') != null){
 						echo '<a href="' . $scholar->get('githubLinkApp') . '" target="_blank">WWDC App on Github</a><br><br>';
 					}
