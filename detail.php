@@ -21,6 +21,7 @@
 		?>
 		<title>WWDC Scholar - <?php echo $scholar->get('firstName') . " " . $scholar->get('lastName'); ?></title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	</head>
 	<body>
 		<a href="index.php" style="text-decoration:none;">
@@ -49,7 +50,7 @@
 				?>
 				</p>
 			</div>
-			<div class="third" style="background-image:url('<?php echo $scholar->get('profilePic')->getURL(); ?>');border-radius:32px;">
+			<div class="third" style="min-height:330px;background-image:url('<?php echo $scholar->get('profilePic')->getURL(); ?>');border-radius:32px;">
 			</div>
 			<div class="third">
 				<h2>Contact Details</h2>
