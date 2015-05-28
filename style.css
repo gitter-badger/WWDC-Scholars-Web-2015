@@ -49,6 +49,14 @@ a:visited{
 
 }
 
+
+#videoArea {
+    margin-bottom: 100px;
+    display:inline-block;
+    vertial-align:middle;
+    margin-right: 30px;
+}
+
 .lead {
     width: 85%;
     text-align:left;
@@ -192,7 +200,9 @@ b{
 }
 /*iPhone*/
 @media all and (max-width: 510px), (max-device-width: 510px){
-      
+      #videoArea {
+	  display:none;
+	  }
 
 	#head{
 		width:400px;
@@ -225,7 +235,11 @@ b{
 	}
 }
 @media all and (max-width:400px), (max-device-width: 400px){
-	#head{
+       #videoArea {
+	   display:none;
+	   }
+
+       #head{
 		width:320px;
 	}
 	.container{

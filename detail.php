@@ -53,16 +53,16 @@
 			      
 				<?php
 				   if($scholar->get('email') != null){
-				echo '<a href="mailto:' . $scholar->get('email') . '"target="_blank"><img src="images/gmail.png" /></a>';
+				echo '<a href="mailto:' . $scholar->get('email') . '"target="_blank"><img src="images/gmail.png" /></a> ';
 				}
 				if($scholar->get('website') != null){
-				echo '<a href="' . $scholar->get('website') .  '"target="_blank"><img src="images/picasa.png" /></a>';
+				echo '<a href="' . $scholar->get('website') .  '"target="_blank"><img src="images/picasa.png" /></a> ';
 				}
 				if($scholar->get('twitter') != null){
-				echo '<a href="' . $scholar->get('twitter') . '"target="_blank"><img src="images/twitter.png" /></a>';
+				echo '<a href="' . $scholar->get('twitter') . '"target="_blank"><img src="images/twitter.png" /></a> ';
 				}
 				if($scholar->get('linkedin') != null){
-				echo '<a href="' . $scholar->get('linkedin') . '" target="_blank"><img src="images/linkedin.png" /></a>';
+				echo '<a href="' . $scholar->get('linkedin') . '" target="_blank"><img src="images/linkedin.png" /></a> ';
 				}
 				if($scholar->get('facebook') != null){
 				echo '<a href="' . $scholar->get('facebook') . '" target="_blank"><img src="images/facebook.png" /></a>';
@@ -122,6 +122,17 @@
 			</h1>
 			<div id="screenshotsWrap">
 				<div id="screenshots">
+				  <div id="videoArea">
+				  
+				    
+				  </div>
+				 
+
+
+
+
+
+
 					<img src="<?php echo $scholar->get('screenshotOne')->getURL(); ?>">
 					<?php
 						$screenshots = array("screenshotTwo", "screenshotThree", "screenshotFour");
@@ -131,11 +142,97 @@
 							}
 						}
 					?>
+
+			
+
 				</div>
 			</div>
 		</div>
 		<?php
 			}
 		?>
+
+
+		
+
+		<script src="//www.youtube.com/player_api"></script>
+
+		<script>
+		  var player;
+		  
+		  function onYouTubePlayerAPIReady() {
+    player = new YT.Player('videoArea', {
+        height: '400',
+        width: '600',
+        playerVars: {
+            controls: 0
+        },
+
+
+        events: {
+            'onReady': onPlayerReady,
+            'onStateChange': function(event) {
+
+                // WHEN VIDEO ENDS -- THIS IS WHAT YOU SHOULD
+
+		  if (event.data == 0) {
+
+                } else if (event.data === 1) { // IF VIDEO IS PLAYING
+                  
+
+
+
+                } else if (event.data === 2) { // IF VIDEO IS PAUSED
+                 
+
+                } // END VIDEO PAUSED/PLAYING CONDITIONAL
+            }
+        }
+    });
+}
+
+document.getElementById("videoArea").style.display = "none";
+
+function onPlayerReady(event) {
+		
+
+		  var ytURL = '<?php echo $scholar->get('videoLink'); ?>';
+		
+		 
+
+		  if (ytURL.length > 0 && document.body.clientWidth > 510) {
+		  var id = extractParameters(ytURL)["v"];
+
+		  document.getElementById("videoArea").style.display = "inline-block";
+
+		  player.loadVideoById(id);
+                event.target.playVideo();
+		  }
+
+}
+
+
+
+function extractParameters(url) {
+    var query = url.match(/.*\?(.*)/)[1];
+    var assignments = query.split("&");
+    var pair, parameters = {};
+    for (var ii = 0; ii < assignments.length; ii++) {
+        pair = assignments[ii].split("=");
+        parameters[pair[0]] = pair[1];
+    }
+    return parameters;
+}
+
+
+
+
+		</script>
+		
+		<?php
+		   
+		?>
+
 	</body>
 </html>
+
