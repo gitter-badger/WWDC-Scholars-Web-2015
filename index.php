@@ -56,7 +56,7 @@
 			?>
 			<a href="index.php?page=<?php echo $page - 1; ?>">
 				<div class="pageLink left">
-					<- Previous Page
+					&laquo; Previous Page
 				</div>
 			</a>
 			<?php
@@ -68,7 +68,7 @@
 			?>
 			<a href="index.php?page=<?php echo $page + 1; ?>">
 				<div class="pageLink right">
-					Next Page ->
+					Next Page &raquo;
 				</div>
 			</a>
 			<?php
