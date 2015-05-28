@@ -54,6 +54,14 @@ a:visited{
     text-align:left;
 }
 
+.social img {
+    width: 30px;
+}
+
+#infoStuff {
+    width: 66.666666666666%;
+}
+
 h1{
 	font-weight:200;
 }
@@ -175,6 +183,8 @@ b{
 }
 /*iPhone*/
 @media all and (max-width: 510px), (max-device-width: 510px){
+      
+
 	#head{
 		width:400px;
 	}
@@ -186,6 +196,11 @@ b{
 		margin:15px;
 		min-height:0px;
 	}
+
+	#infoStuff {
+	    width:370px;
+	    }
+
 	.container .square{
 		width:370px;
 		height:370px;
@@ -212,6 +227,11 @@ b{
 		margin:15px;
 		min-height:0px;
 	}
+
+	#infoStuff {
+	    width:290px;
+	}
+
 	.container .square{
 		width:290px;
 		height:290px;

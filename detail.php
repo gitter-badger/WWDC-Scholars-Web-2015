@@ -31,7 +31,7 @@
 		</a>
 		<div class="container">
 		  <div class="third" style="min-height:330px;background-image:url('<?php echo $scholar->get('profilePic')->getURL(); ?>');border-radius:10px;"></div>
-			<div class="third"><h1><?php echo $scholar->get('firstName') . " " . $scholar->get('lastName') . ", " . $scholar->get('age');?></h1>
+			<div class="third" id="infoStuff"><h1><?php echo $scholar->get('firstName') . " " . $scholar->get('lastName') . ", " . $scholar->get('age');?></h1>
 		
 			  <p style="margin-top: -15px;">
 			  <?php
@@ -48,7 +48,7 @@
 
   
 			  <center>
-			    <div class="social">
+			    <div class="social" style="margin-top: -20px;">
 			      
 				<?php
 				   if($scholar->get('email') != null){
@@ -77,6 +77,7 @@
 			  
 			</div>
 
+<!--
 			<div class="third">
 				<h2>&#63743; Apple Details</h2>
 				<p>
@@ -99,7 +100,7 @@
 				?>
 				</p>
 			</div>
-
+-->
 	
 		</div>
 		<?php
