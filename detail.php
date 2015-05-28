@@ -30,7 +30,8 @@
 			</div>
 		</a>
 		<div class="container">
-		  <div class="third" style="min-height:330px;background-image:url('<?php echo $scholar->get('profilePic')->getURL(); ?>');border-radius:10px;"></div>
+		  <div class="third" style="min-height:330px;border-radius:10px; background-image:url('<?php echo $scholar->get('profilePic')->getURL();?>');">
+		  </div>
 			<div class="third" id="infoStuff"><h1><?php echo $scholar->get('firstName') . " " . $scholar->get('lastName') . ", " . $scholar->get('age');?></h1>
 		
 			  <p style="margin-top: -15px;">
@@ -75,6 +76,12 @@
 			  <p class="lead"><?php echo $scholar->get('shortBio');?></p>
 			  </center>
 			  
+			 <?php 
+			    if ($scholar->get('itunes') != null) {
+			      echo '<a href="' . $scholar->get('itunes') . '" target="_blank"><img style="height: 70px; margin-top: 20px;" src="http://www.mosa.nl/files/8613/8668/4836/available-in-app-store-badge.png" /></a>';
+			    }
+			 ?>
+
 			</div>
 
 <!--
@@ -101,6 +108,9 @@
 				</p>
 			</div>
 -->
+
+
+
 	
 		</div>
 		<?php
@@ -108,7 +118,7 @@
 		?>
 		<div class="container">
 			<h1>
-				&#63743; WWDC 15 App Screenshots
+				&#63743; WWDC 15 Application
 			</h1>
 			<div id="screenshotsWrap">
 				<div id="screenshots">

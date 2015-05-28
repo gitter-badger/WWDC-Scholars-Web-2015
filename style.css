@@ -56,7 +56,16 @@ a:visited{
 
 .social img {
     width: 30px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
+
+.social img:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+
 
 #infoStuff {
     width: 66.666666666666%;
