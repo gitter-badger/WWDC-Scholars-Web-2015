@@ -30,9 +30,14 @@
 			</div>
 		</a>
 		<div class="container">
-		  <div class="third" style="min-height:330px;border-radius:10px; background-image:url('<?php echo $scholar->get('profilePic')->getURL();?>');">
+		  <div class="third" id="profilePicture" style="min-height:330px;background-image:url('<?php echo $scholar->get('profilePic')->getURL();?>');">
 		  </div>
-			<div class="third" id="infoStuff"><h1><?php echo $scholar->get('firstName') . " " . $scholar->get('lastName') . ", " . $scholar->get('age');?></h1>
+		  
+		  
+<!--		      <img class="third bgIMG" id="infoStuff" src="http://maps.googleapis.com/maps/api/staticmap?center=<?php echo $scholar->get('location');?>&zoom=12&scale=2&size=670x330&maptype=roadmap&format=png&visual_refresh=true" style="position:absolute; z-index: -1; left: 335px;"/> -->
+			<div class="third" id="infoStuff" style="position:relative;">
+			  <img class="bgIMG" src="http://maps.googleapis.com/maps/api/staticmap?center=<?php echo $scholar->get('location');?>&zoom=12&scale=2&size=670x330&maptype=roadmap&format=png&visual_refresh=true" style="position:absolute; z-index: -1; height:100%; width:100%; left:0; -webkit-filter:brightness(50%); filter: brightness(50%);"/>
+<h1><?php echo $scholar->get('firstName') . " " . $scholar->get('lastName') . ", " . $scholar->get('age');?></h1>
 		
 			  <p style="margin-top: -15px;">
 			  <?php
@@ -120,6 +125,7 @@
 			<h1>
 				&#63743; WWDC 15 Application
 			</h1>
+		
 			<div id="screenshotsWrap">
 				<div id="screenshots">
 				  <div id="videoArea">
