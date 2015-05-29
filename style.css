@@ -85,8 +85,8 @@ img {
 
 .social img {
     width: 30px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(80%);
+    filter: grayscale(80%);
 }
 
 .social img:hover {
@@ -98,6 +98,17 @@ img {
 
 #infoStuff {
     width: 66.666666666666%;
+    color:white;
+  
+ 
+}
+
+#infoStuff img {
+    border-radius: 0px 10px 10px 0px;
+}
+
+#profilePicture {
+    border-radius: 10px 0px 0px 10px;
 }
 
 h1{
@@ -239,6 +250,11 @@ b{
 
 	#infoStuff {
 	    width:370px;
+	    border-radius: 10px;
+	    }
+
+	#infoStuff img {
+	    border-radius: 10px;
 	    }
 
 	.container .square{
@@ -254,8 +270,21 @@ b{
 	#footer{
 		width:400px;
 	}
+
+	#profilePicture {
+
+	    border-radius:10px;
+	    }
 }
 @media all and (max-width:400px), (max-device-width: 400px){
+    #profilePicture {
+	border-radius: 10px;
+	}
+
+    #infoStuff img {
+	border-radius: 10px;
+	}
+
        #videoArea {
 	   display:none;
 	   }
@@ -272,8 +301,9 @@ b{
 		min-height:0px;
 	}
 
-	#infoStuff {
+	#infoStuff{
 	    width:290px;
+	  
 	}
 
 	.container .square{
