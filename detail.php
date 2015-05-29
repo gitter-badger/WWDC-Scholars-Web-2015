@@ -143,7 +143,13 @@
 						}
 					?>
 
-			
+					<?php
+
+					   if($scholar->get('githubLinkApp') != null) {
+					      echo '<a href="' . $scholar->get('githubLinkApp') . '" target="_blank"><img id="github" src="images/fork-github.png" style="margin-left: 25px; height: 200px; margin-bottom: 200px;" /></a>';
+					   }
+
+					?>
 
 				</div>
 			</div>
@@ -159,13 +165,28 @@
 
 		<script>
 		  var player;
-		  
+
+		  var id;
+
+
 		  function onYouTubePlayerAPIReady() {
+
+		    var ytURL = '<?php echo $scholar->get('videoLink'); ?>';
+		  
+		   
+
+		    if (ytURL.length > 0 && document.body.clientWidth > 510) {
+		    id = extractParameters(ytURL)["v"];
+
+		    document.getElementById("videoArea").style.display = "inline-block";
+		    }
+
     player = new YT.Player('videoArea', {
         height: '400',
         width: '600',
+		  videoId: id,
         playerVars: {
-            controls: 0
+            'controls': 1, 'autoplay': 0
         },
 
 
@@ -205,8 +226,8 @@ function onPlayerReady(event) {
 
 		  document.getElementById("videoArea").style.display = "inline-block";
 
-		  player.loadVideoById(id);
-                event.target.playVideo();
+		 // player.loadVideoById(id);
+               // event.target.playVideo();
 		  }
 
 }
