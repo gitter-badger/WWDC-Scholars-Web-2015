@@ -36,7 +36,7 @@
 		  
 <!--		      <img class="third bgIMG" id="infoStuff" src="http://maps.googleapis.com/maps/api/staticmap?center=<?php echo $scholar->get('location');?>&zoom=12&scale=2&size=670x330&maptype=roadmap&format=png&visual_refresh=true" style="position:absolute; z-index: -1; left: 335px;"/> -->
 			<div class="third" id="infoStuff" style="position:relative;">
-			  <img class="bgIMG" src="http://maps.googleapis.com/maps/api/staticmap?center=<?php echo $scholar->get('location');?>&zoom=12&scale=2&size=670x330&maptype=roadmap&format=png&visual_refresh=true" style="position:absolute; z-index: -1; height:100%; width:100%; left:0; -webkit-filter:brightness(50%); filter: brightness(50%);"/>
+			  <img class="bgIMG" src="http://maps.googleapis.com/maps/api/staticmap?center=<?php echo $scholar->get('location');?>&zoom=12&scale=false&size=670x330&maptype=roadmap&format=png&visual_refresh=true" style="position:absolute; z-index: -1; height:100%; width:100%; left:0; -webkit-filter:brightness(50%); filter: brightness(50%);"/>
 <h1><?php echo $scholar->get('firstName') . " " . $scholar->get('lastName') . ", " . $scholar->get('age');?></h1>
 		
 			  <p style="margin-top: -15px;">
@@ -83,7 +83,7 @@
 			  
 			 <?php 
 			    if ($scholar->get('itunes') != null) {
-			      echo '<a href="' . $scholar->get('itunes') . '" target="_blank"><img style="height: 70px; margin-top: 20px;" src="http://www.mosa.nl/files/8613/8668/4836/available-in-app-store-badge.png" /></a>';
+			      echo '<a href="' . $scholar->get('itunes') . '" target="_blank"><img style="height: 45px; margin-bottom: 20px;  margin-top: 20px;" src="images/app-store-badge.svg" /></a>';
 			    }
 			 ?>
 
