@@ -58,19 +58,19 @@
 			      
 				<?php
 				   if($scholar->get('email') != null){
-				echo '<a href="mailto:' . $scholar->get('email') . '"target="_blank"><img src="images/gmail.png" /></a> ';
+				echo '<a href="mailto:' . $scholar->get('email') . '"target="_blank"><img src="images/gmail.png" style="border-radius: 0;"/></a> ';
 				}
 				if($scholar->get('website') != null){
-				echo '<a href="' . $scholar->get('website') .  '"target="_blank"><img src="images/picasa.png" /></a> ';
+				echo '<a href="' . $scholar->get('website') .  '"target="_blank"><img src="images/picasa.png" style="border-radius: 0;"/></a> ';
 				}
 				if($scholar->get('twitter') != null){
-				echo '<a href="' . $scholar->get('twitter') . '"target="_blank"><img src="images/twitter.png" /></a> ';
+				echo '<a href="' . $scholar->get('twitter') . '"target="_blank"><img src="images/twitter.png" style="border-radius:0;"/></a> ';
 				}
 				if($scholar->get('linkedin') != null){
-				echo '<a href="' . $scholar->get('linkedin') . '" target="_blank"><img src="images/linkedin.png" /></a> ';
+				echo '<a href="' . $scholar->get('linkedin') . '" target="_blank"><img src="images/linkedin.png" style="border-radius:0;"/></a> ';
 				}
 				if($scholar->get('facebook') != null){
-				echo '<a href="' . $scholar->get('facebook') . '" target="_blank"><img src="images/facebook.png" /></a>';
+				echo '<a href="' . $scholar->get('facebook') . '" target="_blank"><img src="images/facebook.png" style="border-radius:0;"/></a>';
 				}
 				?>
 				
@@ -123,7 +123,7 @@
 		?>
 		<div class="container">
 			<h1>
-				&#63743; WWDC 15 Application
+				&#63743; <b>WWDC</b>15 Application
 			</h1>
 		
 			<div id="screenshotsWrap">
