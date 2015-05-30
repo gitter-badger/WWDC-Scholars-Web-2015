@@ -87,6 +87,7 @@ img {
     width: 30px;
     -webkit-filter: grayscale(80%);
     filter: grayscale(80%);
+    /*border-radius: 10px;*/
 }
 
 .social img:hover {
