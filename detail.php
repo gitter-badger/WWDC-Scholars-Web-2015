@@ -123,7 +123,7 @@
 		?>
 		<div class="container">
 			<h1>
-				&#63743; WWDC 15 Application
+				&#63743; <b>WWDC</b>15 Application
 			</h1>
 		
 			<div id="screenshotsWrap">
