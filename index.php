@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <?php
-	include('keys.php');
+	require('keys.php');
 	require 'vendor/autoload.php';
 	use Parse\ParseClient;
 	use Parse\ParseQuery;
