@@ -14,9 +14,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	</head>
 	<body>
-		<div id="head">
-			<h1>&#63743; WWDC</h1><h2>Scholars</h2>
-		</div>
+		<a href="index.php" style="text-decoration:none;">
+			<div id="head">
+				<h1>&#63743; WWDC</h1><h2>Scholars</h2>
+			</div>
+		</a>
 		<div class="container">
 			<?php
 				//DETERMINE CORRECT PEOPLE TO LOAD, GIVEN PAGE
