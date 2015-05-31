@@ -1,11 +1,12 @@
 <!DOCTYPE HTML>
 <?php
+	include('keys.php');
 	require 'vendor/autoload.php';
 	use Parse\ParseClient;
 	use Parse\ParseQuery;
 	use Parse\ParseObject;
 	use Parse\ParseFile;
-	ParseClient::initialize('16ktYTkz6kuPyT81SZtxP4CXDV0POwVV5szF7kYP', '8Wl6GsCO7LuLB5z8maqM4kDfZb5RLxXkmjMKvJE7', 'ReDjNKcHwfwfIThkaNP9FpXU1nSESclaSjqVTIto');
+	ParseClient::initialize($app_id, $rest_key, $master_key);
 ?>
 <html>
 	<head>
