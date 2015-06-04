@@ -173,6 +173,7 @@ b{
 	color:white;
 	line-height:50px;
 	border-radius:32px;
+	max-width:990px;
 }
 #screenshotsWrap{
 	overflow-x:auto;
@@ -197,6 +198,7 @@ b{
 	}
 	.pageLink{
 		width:735px;
+		max-width:1500px;
 	}
 	#footer{
 		width:1530px;
@@ -212,6 +214,7 @@ b{
 	.pageLink{
 		width:350px;
 		overflow:hidden;
+		max-width:735px;
 	}
 	#footer{
 		width:765px;
@@ -226,6 +229,7 @@ b{
 	}
 	.pageLink{
 		width:225px;
+		max-width:480px;
 	}
 	#footer{
 		width:510px;
@@ -267,28 +271,28 @@ b{
 	}
 	.pageLink{
 		width:130px;
+		max-width:370px;
 	}
 	#footer{
 		width:400px;
 	}
 
 	#profilePicture {
-
-	    border-radius:10px;
-	    }
+		border-radius:10px;
+	}
 }
 @media all and (max-width:400px), (max-device-width: 400px){
-    #profilePicture {
-	border-radius: 10px;
+	#profilePicture {
+		border-radius: 10px;
 	}
 
-    #infoStuff img {
-	border-radius: 10px;
+	#infoStuff img {
+		border-radius: 10px;
 	}
 
-       #videoArea {
-	   display:none;
-	   }
+	#videoArea {
+		display:none;
+	}
 
        #head{
 		width:320px;
@@ -322,6 +326,7 @@ b{
 	}
 	.pageLink{
 		width:130px;
+		max-width:290px;
 	}
 	#footer{
 		width:320px;
@@ -336,6 +341,7 @@ b{
 	}
 	.pageLink{
 		width:95px
+		max-width:225px;
 	}
 	#footer{
 		width:255px;
