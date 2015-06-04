@@ -34,7 +34,7 @@
 		</div>
 
 		<div class="third" id="infoStuff" style="position:relative;">
-			<img class="bgIMG" src="http://maps.googleapis.com/maps/api/staticmap?center=<?php echo $scholar->get('location');?>&zoom=12&scale=false&size=670x330&maptype=roadmap&format=png&visual_refresh=true" style="position:absolute; z-index: -1; height:100%; width:100%; left:0; -webkit-filter:brightness(50%); filter: brightness(50%);"/>
+			<img class="bgIMG" src="http://maps.googleapis.com/maps/api/staticmap?center=<?php echo $scholar->get('location');?>&zoom=12&scale=false&size=670x330&maptype=roadmap&format=png&visual_refresh=true" style="position:absolute; z-index: -1; height:100%; width:100%; left:0; -webkit-filter:brightness(70%); filter: brightness(70%);"/>
 			<h1><?php echo $scholar->get('firstName') . " " . $scholar->get('lastName') . ", " . $scholar->get('age');?></h1>
 			<p style="margin-top: -15px;">
 				<?php
