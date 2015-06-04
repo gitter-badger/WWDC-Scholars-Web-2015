@@ -71,8 +71,10 @@ img {
     margin-right: 30px;
 }
 .lead {
-    width: 85%;
-    text-align:left;
+	width: 85%;
+	text-align:left;
+	margin-left:auto;
+	margin-right:auto;
 }
 .social img {
     width: 30px;
@@ -137,7 +139,9 @@ b{
 	font-weight: 200;
 }
 #footer{
-	height:100px;
+	text-align:center;
+	line-height:50px;
+	height:50px;
 	width:990px;
 	margin:auto;
 }

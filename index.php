@@ -11,6 +11,9 @@
 <html>
 	<head>
 		<title>WWDC Scholars</title>
+		<meta property="og:title" content="Scholars List" />
+		<meta property="og:image" content="http://wwdcscholars.com/WWDC-Scholars-Web-2015/apple-touch-icon.png" />
+		<meta property="og:description" content="We're scholars from all around the world and we combined our knowledge, our innovation and our love for software to build this app to inspire kids, students and future iOS developers to build apps that can inspire the world." />
 		<?php
 			include('commonHeader.php');
 		?>
@@ -96,7 +99,7 @@
 		</div>
 		<div id="footer">
 			<p>
-				<b>&#63743; WWDC</b> 15 is not affiliated with Apple Inc. in any way. It is made by a <a href="credits.php">group of the Apple Scholarship Winners</a>.
+				<b>&#63743; WWDC</b> 15 Scholars is not affiliated with Apple Inc. in any way. It is made by a group of the Apple Scholarship Winners.
 			</p>
 		</div>
 	</body>
