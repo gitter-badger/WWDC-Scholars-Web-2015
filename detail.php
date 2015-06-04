@@ -21,8 +21,7 @@
 			$scholar = $result[0];
 		?>
 		<title>WWDC Scholar - <?php echo $scholar->get('firstName') . " " . $scholar->get('lastName'); ?></title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<?php include('commonHeader.php'); ?>
 	</head>
 	<body>
 		<a href="index.php" style="text-decoration:none;">
@@ -103,6 +102,11 @@
 		<?php
 			}
 		?>
+		<div id="footer">
+                        <p>
+                                <b>&#63743; WWDC</b> 15 is not affiliated with Apple Inc. in any way. It is made by a <a href="credits.php">group of the Apple Scholarship Winners</a>.
+                        </p>
+                </div>
 		<script src="//www.youtube.com/player_api"></script>
 		<script>
 			var player;

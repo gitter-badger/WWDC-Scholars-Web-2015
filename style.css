@@ -21,25 +21,19 @@ a:visited{
 	font-weight: 200;
 	src: url('SanFranciscoText-Thin.otf');
 }
-
 img {
--webkit-transition:all 0.1s linear;
--moz-transition:all 0.1s linear;
--o-transition:all 0.1s linear;
--ms-transition:all 0.1s linear;
-    
+	-webkit-transition:all 0.1s linear;
+	-moz-transition:all 0.1s linear;
+	-o-transition:all 0.1s linear;
+	-ms-transition:all 0.1s linear;
 }
-
 #github {
-   
-
-    filter: brightness(100%);
-    -webkit-filter: brightness(100%);
+	filter: brightness(100%);
+	-webkit-filter: brightness(100%);
 }
-
 #github:hover {
-    filter:brightness(40%);
-    -webkit-filter:brightness(40%);
+	filter:brightness(40%);
+	-webkit-filter:brightness(40%);
 }
 
 #head{
@@ -67,7 +61,6 @@ img {
 	margin:15px;
 	float:left;
 	border-radius: 32px;
-
 }
 
 
@@ -77,41 +70,30 @@ img {
     vertial-align:middle;
     margin-right: 30px;
 }
-
 .lead {
     width: 85%;
     text-align:left;
 }
-
 .social img {
     width: 30px;
     -webkit-filter: grayscale(80%);
     filter: grayscale(80%);
     /*border-radius: 10px;*/
 }
-
 .social img:hover {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
 }
-
-
-
 #infoStuff {
     width: 66.666666666666%;
-    color:white;
-  
- 
+    color:white; 
 }
-
 #infoStuff img {
     border-radius: 0px 10px 10px 0px;
 }
-
 #profilePicture {
     border-radius: 10px 0px 0px 10px;
 }
-
 h1{
 	font-weight:200;
 }
@@ -132,7 +114,7 @@ b{
 	text-align:center;
 	margin-top:175px;
 	line-height:50px;
-	background-color:rgba(0,0,0,0.5);
+	background-color:rgba(88,101,174,0.75);
 	border-bottom-left-radius:32px;
 	border-bottom-right-radius:32px;
 }
@@ -169,7 +151,7 @@ b{
 	margin:15px;
 	width:480px;
 	height: 50px;
-	background-color:black;
+	background-color:rgb(50,50,50);
 	color:white;
 	line-height:50px;
 	border-radius:32px;

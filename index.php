@@ -11,9 +11,9 @@
 <html>
 	<head>
 		<title>WWDC Scholars</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-		<meta name="apple-itunes-app" content="app-id=999731893">
+		<?php
+			include('commonHeader.php');
+		?>
 	</head>
 	<body>
 		<a href="index.php" style="text-decoration:none;">
@@ -86,7 +86,18 @@
 			<h1>Are you a <b>&#63743; WWDC</b>15 scholarship winner?</h1>
 			<p>Congratulations! We'll see you on June 7<sup>th</sup> for the Scholarship Orientation Session! For now, you can join us all on <a href="https://www.facebook.com/groups/477629149059210" target="_blank"> Facebook</a>!</p>
 		</div>
+		<div class="container">
+			<h1>Press Opportunities</h1>
+			<p>
+				For more information about the <b>&#63743; WWDC</b>15 Scholars website and app, please e-mail <a href="mailto:veryhappymichie@gmail.com">Michie Ang</a>.
+				<br><br>
+				Local press may find the map of Scholars in our iOS App useful for finding a local scholar!
+			</p>
+		</div>
 		<div id="footer">
+			<p>
+				<b>&#63743; WWDC</b> 15 is not affiliated with Apple Inc. in any way. It is made by a <a href="credits.php">group of the Apple Scholarship Winners</a>.
+			</p>
 		</div>
 	</body>
 </html>
